@@ -6,9 +6,9 @@ mod controller;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()>{
-    //rust环境变量配置
     dotenv::dotenv().ok();
     env_logger::init();
+    log::info!("日志库测试！");
 
     //TODO: database wait to be connnected
 
